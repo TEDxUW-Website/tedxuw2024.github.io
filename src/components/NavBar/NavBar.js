@@ -15,7 +15,9 @@ const NavBar = ({ isOpen, toggleMenu }) => {
         {!isOpen ? <img src={Hamburger} alt="Hamburger" className="custom-icon" /> : <img src={Multiply} alt="Close" className="custom-icon" />}
       </div>
       <div className="navbar-logo">
-        <img src={logo} alt="Logo" />
+        <NavLink to="/" onClick={toggleMenu}>
+          <img src={logo} alt="Logo" />
+        </NavLink>
       </div>
       <div className={`navbar-links ${isOpen ? "open" : ""}`}>
         <div className='navbar-tabs'>

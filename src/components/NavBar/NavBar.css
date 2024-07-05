@@ -53,6 +53,13 @@
 
 .navbar-links a:hover {
   color: #ff2b06; /* TEDx red color */
+  text-decoration: none;
+}
+
+.navbar-links .navbar-tabs .active-link{
+  text-decoration: underline;
+  text-decoration-color: #ff2b06;
+  text-decoration-thickness: 3px;
 }
 
 .navbar-links .social-icons {

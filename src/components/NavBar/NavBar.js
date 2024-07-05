@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logo from "../../images/logo-black-1.png";
 import Instagram from "../../images/Instagram.svg";
 import Linkedin from "../../images/LinkedIn.svg";
@@ -19,12 +19,12 @@ const NavBar = ({ isOpen, toggleMenu }) => {
       </div>
       <div className={`navbar-links ${isOpen ? "open" : ""}`}>
         <div className='navbar-tabs'>
-          <Link to="/speakers">Speakers</Link>
-          <Link to="/talks">Talks</Link>
-          <Link to="/blogs">Blogs</Link>
-          <Link to="/sponsors">Sponsors</Link>
-          <Link to="/faq">FAQ</Link>
-          <Link to="/team">Team</Link>
+          <NavLink to="/speakers" onClick={toggleMenu} className={({ isActive }) => isActive ? 'active-link' : ''}>Speakers</NavLink>
+          <NavLink to="/talks" onClick={toggleMenu} className={({ isActive }) => isActive ? 'active-link' : ''}>Talks</NavLink>
+          <NavLink to="/blogs" onClick={toggleMenu} className={({ isActive }) => isActive ? 'active-link' : ''}>Blogs</NavLink>
+          <NavLink to="/sponsors" onClick={toggleMenu} className={({ isActive }) => isActive ? 'active-link' : ''}>Sponsors</NavLink>
+          <NavLink to="/faq" onClick={toggleMenu} className={({ isActive }) => isActive ? 'active-link' : ''}>FAQ</NavLink>
+          <NavLink to="/team" onClick={toggleMenu} className={({ isActive }) => isActive ? 'active-link' : ''}>Team</NavLink>
         </div>
         <div className="social-icons">
           <a href="https://www.instagram.com/tedxuw/" target="_blank" rel="noopener noreferrer" style={{height: 32}}>

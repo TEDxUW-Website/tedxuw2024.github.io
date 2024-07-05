@@ -28,7 +28,6 @@
 }
 
 .sidebar-links a:hover {
-    color: #ff2b06;
     background-color: rgba(29, 29, 29, 0.8);
     border-radius: 15px;
 }
@@ -36,6 +35,9 @@
 .sidebar-links .active-link {
     background-color: rgba(43, 43, 43, 0.8);
     border-radius: 15px;
+    text-decoration: underline;
+    text-decoration-color: #ff2b06;
+    text-decoration-thickness: 3px;
 }
 
 .sidebar-logo {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "./Header.css"
-import { TEDxLogo } from '../../assets'
+import { TEDxLogo, Cloud, Cloud2 } from '../../assets'
 import Lottie, { eventListeners, options } from 'react-lottie'
 import shootingstar from './TEDx-star.json';
 
@@ -17,9 +17,10 @@ const Header = () => {
     };
 
     return (
-        <header style={{height: '100vh', width: '100vw'}}>
-            <div className="wrapper" style={{height: '100%', width: '100%'}}>
+        <header>
+            <div className="wrapper">
                 {animationFinished ? (
+                    <>
                     <div className="mainText">
                         <div className="title">
                             <h1>In The Odd Chance</h1>
@@ -32,7 +33,14 @@ const Header = () => {
                                 <p>Location</p>
                             </div>
                         </div>
-                    </div>  
+                    </div> 
+                    <div className="clouds">
+                            <img src={Cloud} alt="Cloud" className="cloud cloud1" />
+                            <img src={Cloud} alt="Cloud" className="cloud cloud2" />
+                            <img src={Cloud2} alt="Cloud" className="cloud cloud3" />
+                            <img src={Cloud2} alt="Cloud" className="cloud cloud4" />
+                        </div>
+                    </> 
                 ) : (
                     <>
                     <Lottie options={defaultOptions} height={'100%'} width={'100%'} 
@@ -40,8 +48,11 @@ const Header = () => {
                         {
                             eventName: 'complete',
                             callback: () => {
-                                console.log('the animation completed:')
+                                console.log('the animation completed:');
+                                console.log('Screen Width:', window.innerWidth, 'px');
+                                console.log('Screen Height:', window.innerHeight, 'px');
                                 setAnimationFinished(true)
+                                
                             }
                         },
                       ]}/>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "./Header.css"
 import { TEDxLogo, Cloud, Cloud2 } from '../../assets'
-import Lottie, { eventListeners, options } from 'react-lottie'
+import Lottie from 'react-lottie'
 import shootingstar from './TEDx-star.json';
 
 const Header = () => {
@@ -35,15 +35,15 @@ const Header = () => {
                         </div>
                     </div> 
                     <div className="clouds">
-                            <img src={Cloud} alt="Cloud" className="cloud cloud1" />
-                            <img src={Cloud} alt="Cloud" className="cloud cloud2" />
-                            <img src={Cloud2} alt="Cloud" className="cloud cloud3" />
-                            <img src={Cloud2} alt="Cloud" className="cloud cloud4" />
-                        </div>
+                        <img src={Cloud} alt="Cloud" className="cloud cloud1" />
+                        <img src={Cloud} alt="Cloud" className="cloud cloud2" />
+                        <img src={Cloud2} alt="Cloud" className="cloud cloud3" />
+                        <img src={Cloud2} alt="Cloud" className="cloud cloud4" />
+                    </div>
                     </> 
                 ) : (
                     <>
-                    <Lottie options={defaultOptions} height={'100%'} width={'100%'} 
+                    <Lottie options={defaultOptions} 
                     eventListeners={[
                         {
                             eventName: 'complete',

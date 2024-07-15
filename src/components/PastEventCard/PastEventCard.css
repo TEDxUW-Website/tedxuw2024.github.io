@@ -1,0 +1,55 @@
+.card-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 171.828px;
+    height: 89.387px;
+    flex-shrink: 0;
+    background-color: #e0e0e0;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 20px;
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+.year-box {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 40px;
+    background: linear-gradient(to right, #5a5a5a, #a0a0a0);
+    /* gradient background */
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+.text-box {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18.214px; /* 121.427% */
+    letter-spacing: -0.3px;
+}
+
+/* @media (max-width: 1024px) {
+    .card-container {
+        transform: scale(0.9);
+    }
+} */
+
+@media (max-width: 768px) {
+    .card-container {
+      transform: scale(0.8); 
+    }
+  }

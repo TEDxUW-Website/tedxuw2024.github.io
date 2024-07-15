@@ -116,23 +116,23 @@ header .cloud {
 }
 
 header .cloud1 {
-    top: 48%; 
+    top: 52%; 
     animation: moveLeftToRight 120s linear infinite; 
 }
 
 header .cloud2 {
-    top: 55%; 
+    top: 45%; 
     animation: moveLeftToRight2 120s linear infinite; 
 }
 
 header .cloud3 {
     top: 25%; 
-    animation: moveRightToLeft 80s linear infinite; 
+    animation: moveRightToLeft 120s linear infinite; 
 }
 
 header .cloud4 {
     top: 30%; 
-    animation: moveRightToLeft2 80s linear infinite; 
+    animation: moveRightToLeft2 120s linear infinite; 
 }
 
 /* Media Queries */

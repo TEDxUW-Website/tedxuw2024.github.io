@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
 import { useState } from 'react';
 import SideBar from './components/SideBar/SideBar';
-import { Header } from './components'
+import { Header, Footer } from './components';
 // import Speakers from './pages/Speakers';
 // import Talks from './pages/Talks';
 // import Blogs from './pages/Blogs';
@@ -25,7 +25,12 @@ function App() {
       <SideBar isOpen={isOpen} toggleMenu={toggleMenu} />
       <div className="content">
         <Routes>
-          <Route path="/" element={<Header />} />
+          <Route path="/" element={
+          <>
+            <Header />
+            <Footer />
+          </>
+          } />
           {/* <Route path="/speakers" element={<Speakers />} />
           <Route path="/talks" element={<Talks />} />
           <Route path="/blogs" element={<Blogs />} />

@@ -2,7 +2,7 @@ import React from "react";
 import './Team.css';
 import TeamMember from "../TeamMember/TeamMember";
 import { memberlist } from "./memberList";
-import RedStar from "../../images/BoldRedStar.svg";
+import { Cloud, Cloud2 } from "../../assets";
 
 const Team = () => {
     return (
@@ -10,6 +10,13 @@ const Team = () => {
             <div className="background"></div>
             <div className="mobilebackground"></div>
             <div className="title">MEET THE <br /> TEAM</div>
+
+            <div className="clouds">
+                <img src={Cloud} alt="Cloud" className="cloud cloud1" />
+                <img src={Cloud} alt="Cloud" className="cloud cloud2" />
+                <img src={Cloud2} alt="Cloud" className="cloud cloud3" />
+                <img src={Cloud2} alt="Cloud" className="cloud cloud4" />
+            </div>
 
             {/* chairs */}
             <div className="chairs">Chairs & Operations</div>

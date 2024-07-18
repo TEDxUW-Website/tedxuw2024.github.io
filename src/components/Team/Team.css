@@ -49,6 +49,58 @@
     animation: fadeIn 1s forwards;
 }
 
+@keyframes moveRightToLeft {
+    from { right: -5%; }
+    to { right: 105%; }
+}
+
+@keyframes moveRightToLeft2 {
+    from { right: -0%; }
+    to { right: 100%; }
+}
+
+@keyframes moveLeftToRight {
+    from { left: 0%; }
+    to { left: 100%; }
+}
+
+@keyframes moveLeftToRight2 {
+    from { left: 10%; }
+    to { left: 105%; }
+}
+
+.clouds {
+    top: 0;
+    pointer-events: none;
+}
+
+.cloud {
+    position: absolute;
+    opacity: 0.6; 
+}
+
+.cloud1 {
+    width: 10vw;
+    top: 20px; 
+    animation: moveLeftToRight 120s linear infinite; 
+}
+
+.cloud2 {
+    width: 15vw;
+    top: 30px; 
+    animation: moveLeftToRight2 120s linear infinite; 
+}
+
+.cloud3 {
+    top: 240px; 
+    animation: moveRightToLeft 80s linear infinite; 
+}
+
+.cloud4 {
+    top: 255px; 
+    animation: moveRightToLeft2 80s linear infinite; 
+}
+
 .memberList {
     margin-top: 40px;
     display: grid;
@@ -116,6 +168,18 @@
 
     .mobilebackground {
         display: block;
+    }
+
+    .cloud1 {
+        width: 30vw;
+        top: 20px; 
+        animation: moveLeftToRight 120s linear infinite; 
+    }
+    
+    .cloud2 {
+        width: 40vw;
+        top: 30px; 
+        animation: moveLeftToRight2 120s linear infinite; 
     }
 }
 

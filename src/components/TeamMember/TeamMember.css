@@ -1,0 +1,210 @@
+.team-member {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    margin-left: calc(25vw / 6);
+    margin-right: calc(25vw / 6);
+    margin-bottom: 40px;
+}
+  
+.profile-pic {
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.details {
+    color: #fff;
+}
+
+.name {
+    font-size: 2vw;
+    font-weight: 600;
+    color: #ff2b06;
+    display: flex;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.image-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.toprightstar {
+    left: 0;
+    z-index: 1;
+    width: 10vw;
+    height: 10vw;
+    margin-left: -7vw;
+    margin-top: -4vw;
+}
+
+.bottomleftstar {
+    left: 0;
+    z-index: 1;
+    width: 8vw;
+    height: 8vw;
+    margin-left: -29vw;
+    margin-top: 13vw;
+    rotate: -110deg;
+}
+
+.topleftstar {
+    left: 0;
+    z-index: 1;
+    width: 8vw;
+    height: 8vw;
+    margin-left: -25vw;
+    margin-top: -3vw;
+    rotate: -110deg;
+}
+
+.topleftstar1 {
+    left: 0;
+    z-index: 1;
+    width:50vw;
+    height: 4vw;
+    margin-left: -18vw;
+    margin-top: -3vw;
+    rotate: -110deg;
+}
+
+.linkedin-icon {
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.position {
+    font-size: 16px;
+    color: white;
+    margin-top: 10px;
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.overlay {
+    display: block;
+    margin-left: -25vw;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 1vw;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.overlaytoprightstar {
+    display: block;
+    margin-left: -28vw;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.image-container:hover .overlaytoprightstar {
+    opacity: 1;
+}
+
+
+@media (max-width: 800px){
+    .profile-pic {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .team-member{
+        width: 40vw;
+        margin-left: calc(20vw / 4);
+        margin-right: calc(20vw / 4);
+    }
+    .name{
+        font-size: 4vw;
+    }
+    .position{
+        margin-top: 3px;
+        font-size: 13px;
+    }
+    .linkedin-icon{
+        margin-top: -3px;
+        margin-left: 5px;
+    }
+    .toprightstar {
+        left: 0;
+        z-index: 1;
+        width: 12vw;
+        height: 12vw;
+        margin-left: -9vw;
+        margin-top: -4vw;
+    }
+    .bottomleftstar {
+        left: 0;
+        z-index: 1;
+        width: 10vw;
+        height: 10vw;
+        margin-left: -44vw;
+        margin-top: 22vw;
+        rotate: -110deg;
+    }
+    .topleftstar {
+        left: 0;
+        z-index: 1;
+        width: 10vw;
+        height: 10vw;
+        margin-left: -38vw;
+        margin-top: -4vw;
+        rotate: -110deg;
+    }
+
+    .overlay {
+        display: none;
+    }
+
+    .overlaytoprightstar{
+        display: none;
+    }
+
+    .topleftstar1 {
+        left: 0;
+        z-index: 1;
+        width:50vw;
+        height: 4vw;
+        margin-left: -24vw;
+        margin-top: -6vw;
+        rotate: -110deg;
+    }
+}

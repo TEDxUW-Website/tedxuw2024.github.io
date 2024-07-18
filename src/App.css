@@ -1,6 +1,15 @@
 .App {
-  text-align: center;
-  width: 100vw;
+  width: 100%;
+  background-color: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-color: black;
 }
 
 .App-logo {
@@ -16,6 +25,12 @@
 
 .content {
   margin-top: 85px;
+  position: relative;
+  z-index: 1;
+  height: calc(100vh - 85px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: black;
 }
 
 .App-header {

@@ -1,9 +1,9 @@
 .sidebar-links {
     position: fixed;
-    top: 85px;
-    left: calc(-50vw - 5rem);
-    width: 50vw;
-    height: calc(100vh - 85px - 5.5rem);
+    top: 84px;
+    left: calc(-60vw - 5rem);
+    width: 60vw;
+    height: calc(100vh - 84px);
     background-color: rgba(21, 21, 21, 0.85);
     padding: 2rem;
     border-top-right-radius: 20px;
@@ -11,6 +11,7 @@
     padding-top: 3.5rem;
     font: "inter";
     transition: left 0.3s ease;
+    z-index: 1000;
 }
 
 .sidebar-links.open {

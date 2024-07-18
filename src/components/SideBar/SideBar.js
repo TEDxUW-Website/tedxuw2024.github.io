@@ -4,9 +4,6 @@ import './SideBar.css';
 import ThemeLogo from "../../images/themedLogo.svg";
 
 const SideBar = ({ isOpen, toggleMenu }) => {
-  useEffect(() => {
-    document.querySelector('.sidebar-links').classList.add('open');
-  }, []);
 
   return (
     <div className={`sidebar-links ${isOpen ? "open" : ""}`}>

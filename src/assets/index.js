@@ -12,6 +12,8 @@ import youtube from './youtube.svg'
 import mail from './mail.svg'
 import tedx_logo_footer from './tedx_logo_footer.png'
 import tedx_title_footer from './tedx_title_footer.jpg'
+import faq_desktop_frame from './FAQ-desktop-frame.svg'
+import faq_star from './FAQ-Star.svg'
 
 export { 
     Moon, 
@@ -27,5 +29,7 @@ export {
     x,
     mail,
     tedx_logo_footer,
-    tedx_title_footer
+    tedx_title_footer,
+    faq_desktop_frame,
+    faq_star
 }

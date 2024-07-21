@@ -1,0 +1,49 @@
+.qanda {
+    min-height: 77px;
+    padding: 20px 29px;
+    margin: 30px 75px;
+    border-radius: 20px;
+    background: #2F2F2F;
+}
+
+.qanda.open {
+    height: auto;
+}
+
+.question-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.question {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.star {
+    margin-left: 21px;
+    width: 42px;
+    height: 38.725px;
+    flex-shrink: 0;
+}
+
+.answer {
+    display: none;
+}
+
+.qanda.open .answer {
+    padding: 0 5px;
+    display: block;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

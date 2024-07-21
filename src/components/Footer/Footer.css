@@ -2,6 +2,7 @@ footer {
     width: 100%;
     height: 352.515px;
     background-color: white;
+    overflow: hidden; 
 }
 
 .footer_content {

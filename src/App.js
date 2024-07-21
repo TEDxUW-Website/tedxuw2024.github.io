@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
 import { useState } from 'react';
 import SideBar from './components/SideBar/SideBar';
-import { Header, Footer } from './components';
+import { Header, Footer, FAQ } from './components';
 // import Speakers from './pages/Speakers';
 // import Talks from './pages/Talks';
 // import Blogs from './pages/Blogs';
@@ -26,11 +26,9 @@ function App() {
       <div className="content">
         <Routes>
           <Route path="/" element={
-          <>
             <Header />
-            <Footer />
-          </>
           } />
+          <Route path="/faq" element={<FAQ />} />
           {/* <Route path="/speakers" element={<Speakers />} />
           <Route path="/talks" element={<Talks />} />
           <Route path="/blogs" element={<Blogs />} />
@@ -39,6 +37,7 @@ function App() {
           <Route path="/team" element={<Team />} /> */}
         </Routes>
       </div>
+      <Footer />
     </Router>
   );
 }

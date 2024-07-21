@@ -34,7 +34,7 @@ const Footer = () => {
                     <a href="https://www.facebook.com/TEDxUW/" target="_blank" rel="noopener noreferrer">
                         <img src={fb} alt="fb" className="sm_icon"></img>
                     </a>
-                    <a href="outreach@tedxuw.com" target="_blank" rel="noopener noreferrer">
+                    <a href="mailto:outreach@tedxuw.com" target="_blank" rel="noopener noreferrer">
                         <img src={mail} alt="email" className="sm_icon"></img>
                     </a>
                 </div>

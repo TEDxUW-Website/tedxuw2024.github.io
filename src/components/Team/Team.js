@@ -9,6 +9,7 @@ const Team = () => {
         <div className="team">
             <div className="background"></div>
             <div className="mobilebackground"></div>
+            <div className="desktopclouds"></div>
             <div className="title">MEET THE <br /> TEAM</div>
 
             <div className="clouds">

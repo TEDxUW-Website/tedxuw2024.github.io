@@ -4,16 +4,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
+  background: black;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   height: 85px;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   left: 0;
   right: 0;
   box-sizing: border-box;
+  z-index: 1000;
 }
 
 .navbar-logo {

@@ -1,6 +1,6 @@
 footer {
     width: 100%;
-    height: 352.515px;
+    height: 400px;
     background-color: white;
     overflow: hidden; 
 }
@@ -31,7 +31,7 @@ footer {
     align-items: center;
     padding-top: 50px;
     width: 100%;
-    position: relative; /* Add this line */
+    position: relative; 
 }
 
 .footer_content .timeline::before {

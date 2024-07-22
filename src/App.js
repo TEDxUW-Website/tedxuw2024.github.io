@@ -33,9 +33,9 @@ function App() {
             <Route path="/faq" element={<FAQ />} />
             <Route path="/team" element={<Team />} />
           </Routes>
+          <Footer />
         </div>
       </div>
-      <Footer />
     </Router>
   );
 }

@@ -8,7 +8,7 @@ const Question = ({question, answer}) => {
   return (
     <div className={`qanda ${isOpen ? 'open' : ''}`}>
         <div className="question-section">
-            <text className='question'>{question}</text>
+            <div className='question'>{question}</div>
             <img src={faq_star} alt="Toggle Answer" onClick={() => setIsOpen(!isOpen)} className="star"/>
         </div>
         {isOpen && <p className='answer'>{answer}</p>}

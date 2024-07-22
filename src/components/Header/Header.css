@@ -1,6 +1,6 @@
 header {
     background-image: url('../../assets/Homepage-desktop.svg');
-    min-height: 100vh;
+    height: 100vh;
     min-width: 100vw;
     background-size: cover;
     background-repeat:no-repeat;
@@ -27,6 +27,10 @@ header .wrapper {
 }
 
 .mainText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
     text-align: center;
     animation: fadeIn 1s ease-out forwards;
@@ -91,12 +95,12 @@ header .wrapper {
 
 @keyframes moveLeftToRight {
     from { left: -15%; }
-    to { left: 100%; }
+    to { left: 105%; }
 }
 
 @keyframes moveLeftToRight2 {
     from { left: -20%; }
-    to { left: 105%; }
+    to { left: 100%; }
 }
 
 header .clouds {
@@ -112,23 +116,23 @@ header .cloud {
 }
 
 header .cloud1 {
-    top: 58%; 
+    top: 52%; 
     animation: moveLeftToRight 120s linear infinite; 
 }
 
 header .cloud2 {
-    top: 70%; 
+    top: 45%; 
     animation: moveLeftToRight2 120s linear infinite; 
 }
 
 header .cloud3 {
-    top: 15%; 
-    animation: moveRightToLeft 80s linear infinite; 
+    top: 25%; 
+    animation: moveRightToLeft 120s linear infinite; 
 }
 
 header .cloud4 {
-    top: 25%; 
-    animation: moveRightToLeft2 80s linear infinite; 
+    top: 30%; 
+    animation: moveRightToLeft2 120s linear infinite; 
 }
 
 /* Media Queries */

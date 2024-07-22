@@ -6,7 +6,7 @@ const FAQ = () => {
   return (
     <div className="faq-content">
         <p className="title">
-            FAQs
+            FAQS
         </p>
         <div className='questions'>
             <Question question="Why you?" answer="idk"/>

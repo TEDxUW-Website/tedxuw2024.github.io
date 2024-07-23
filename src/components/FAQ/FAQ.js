@@ -1,6 +1,6 @@
 import React from 'react'
 import './FAQ.css'
-import {Question} from '../index'
+import Question from '../Question/Question.js';
 
 const FAQ = () => {
   return (

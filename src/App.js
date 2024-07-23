@@ -4,11 +4,12 @@ import NavBar from './components/NavBar/NavBar';
 import { useState } from 'react';
 import SideBar from './components/SideBar/SideBar';
 import Homepage from './components/Homepage/Homepage';
+import Footer from './components/Footer/Footer';
+import FAQ from './components/FAQ/FAQ';
 // import Speakers from './pages/Speakers';
 // import Talks from './pages/Talks';
 // import Blogs from './pages/Blogs';
 // import Sponsors from './pages/Sponsors';
-// import FAQ from './pages/FAQ';
 import Team from './components/Team/Team';
 import './App.css';
 
@@ -34,10 +35,11 @@ function App() {
             {/* <Route path="/speakers" element={<Speakers />} />
             <Route path="/talks" element={<Talks />} />
             <Route path="/blogs" element={<Blogs />} />
-            <Route path="/sponsors" element={<Sponsors />} />
-            <Route path="/faq" element={<FAQ />} /> */}
+            <Route path="/sponsors" element={<Sponsors />} /> */}
+            <Route path="/faq" element={<FAQ />} />
             <Route path="/team" element={<Team />} />
           </Routes>
+          <Footer />
         </div>
       </div>
     </Router>

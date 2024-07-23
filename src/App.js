@@ -19,6 +19,10 @@ function App() {
     setIsOpen(!isOpen);
   };
 
+  window.addEventListener('load', () => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <Router>
       <div className='App'>

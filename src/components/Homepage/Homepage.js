@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "./Homepage.css";
 import { TEDxLogo, Cloud, Cloud2 } from '../../assets';
 import Lottie from 'react-lottie';
 import shootingstar from './StarExplode.json';
 import GrayWaves from '../../images/GrayWaves.svg';
 import Speaker1 from '../../images/Speaker1.svg';
+import RedWaves from '../../images/red waves.svg';
+import FriendsPic from '../../images/2buddies.svg';
 
 const Homepage = () => {
     const [animationFinished, setAnimationFinished] = useState(false);
@@ -82,9 +84,49 @@ const Homepage = () => {
             <div className='graywaves'>
                 <img src={GrayWaves} alt="graywaves" className="graywave" />
 
-                <div className='impact'>
-                    <div className='impactTitle'>Our Impact</div>
-                    <div className='impactSubtitle'>Achievements of 2023</div>
+                <div className='graywavecontent'>   
+                    <div className='impact'>
+                        <div className='impactTitle'>Our Impact</div>
+                        <div className='impactSubtitle'>Achievements of 2023</div>
+                    </div>
+                </div>
+
+                <div className='centerStats'>
+                    <div className="statistics-container">
+                        <div className="col-stat-block delegatespots" style={{marginRight: "1vw", marginBottom: "1vw", paddingTop: "1vw"}}>
+                            <div className="stat-number">100</div>
+                            <div className="stat-label">Exclusive Delegate Spots</div>
+                        </div>
+                        <div className='col2stats'>
+                            <div className="row-stat-block" style={{paddingTop: "2vw", paddingBottom: "2vw"}}>
+                                <div className="stat-number7" style={{marginRight: "2vw"}}>7</div>
+                                <div className="stat-label">Fantastic TED Speakers</div>
+                            </div>
+                            <div className="row-stat-block" style={{marginTop: "1vw", marginBottom: "1vw", paddingRight: "2vw", paddingBottom: "2vw", paddingTop: "2vw"}}>
+                                <div className="stat-number25" style={{marginRight: "2vw"}}>25</div>
+                                <div className="stat-label">Amazing organizers to make it happen</div>
+                            </div>
+                        </div>
+                        <div className="row-stat-block" style={{paddingTop: "1vw", paddingBottom: "1vw", paddingRight: "5.5vw", zIndex: 1003, position: "relative"}}>
+                            <div className="stat-number" style={{marginRight: "3vw"}}>$8580+</div>
+                            <div className="stat-label">in sponsorship money</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div className='redwaves'>
+                <img src={RedWaves} alt="redwaves" className="redwave" />
+
+                <div className='redwavescontent'>
+                    <div className='friendspic'>
+                        <img src={FriendsPic} alt="speaker1" className="friendsimage" />
+                    </div>
+
+                    <div className='gallery'>
+                        <div className='gallerytitle'>2023 Gallery</div>
+                        <div className='gallerysubtitle'>A trip down memory lane...</div>
+                    </div>
                 </div>
             </div>
         </>

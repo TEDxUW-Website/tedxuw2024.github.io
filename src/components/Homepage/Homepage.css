@@ -5,21 +5,32 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
 }
 
-.background, .mobilebackground {
-    width: 100%;
+.background {
+    width: 100vw;
     height: 85vh;
+    background: url('../../images/GleamingStars.svg') center center;
     background-size: cover;
     position: absolute;
-    top: 0;
+    top: 85vh;
+    left: 0;
+    z-index: 998;
+}
+
+.mobilebackground {
+    width: 100vw;
+    height: 85vh;
+    background: url('../../images/GleamingStarsMobile.svg') center center;
+    background-size: cover;
+    position: absolute;
+    top: 85vh;
     left: 0;
     z-index: 998;
 }
 
 .background2 {
-    width: 100%;
+    width: 100vw;
     height: 85vh;
     background: url('../../images/GleamingStars.svg') center center;
     background-size: cover;
@@ -30,7 +41,7 @@
 }
 
 .desktopclouds {
-    width: 100%;
+    width: 100vw;
     height: 85vh;
     background: url('../../images/DesktopClouds.svg') center center;
     background-size: cover;
@@ -66,36 +77,141 @@
 }
 
 .graywaves {
-    width: 100%;
+    width: 110%;
     z-index: 1000;
     margin-top: -25vw;
     position: relative;
 }
 
+.graywave{
+    width: 100%;
+}
+
+.graywavecontent {
+    margin-top: -100vw;
+}
+
+.redwavescontent {
+    margin-top: -196vw;
+}
+
 .impact {
     z-index: 1001;
-    margin-top: -1190px;
-    margin-left: 30px;
+    margin-left: 7vw;
 }
 
 .impactTitle {
     color: #FFF;
     font-family: Inter;
-    font-size: 50px;
+    font-size: 5vw;
     font-weight: 700;
+    width:20%;
 }
 
 .impactSubtitle {
     color: red;
-    margin-top: 15px;
+    margin-top: 1.2vw;
     font-family: Inter;
-    font-size: 20px;
+    font-size: 2.8vw;
     font-weight: 400;
+}
+
+.gallery {
+    position: relative;
+    z-index: 1003;
+    margin-top: -8vw;
+}
+
+.gallerytitle {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 5vw;
+    font-weight: 700;
+    width:20%;
+    margin-left: 70vw;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.gallerysubtitle {
+    color: red;
+    margin-top: 1.2vw;
+    font-family: Inter;
+    font-size: 2.8vw;
+    font-weight: 400;
+    margin-left: 57vw;
+}
+
+.statistics-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    margin-top: 7vw;
+    margin-left: 1vw;
+  }
+  
+  .col-stat-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 4vw;
+    padding: 4vw;
+    text-align: center;
+  }
+
+  .row-stat-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 4vw;
+    padding: 4vw;
+    text-align: center;
+  }
+    
+  .stat-number {
+    font-size: 15vw;
+    font-weight: bold;
+  }
+
+  .stat-number7 {
+    font-size: 6vw;
+    font-weight: bold;
+  }
+
+  .stat-number25 {
+    font-size: 8vw;
+    font-weight: bold;
+  }
+  
+  .stat-label {
+    font-size: 2.25vw;
+  }
+
+.redwaves {
+    width: 110%;
+    z-index: 1002;
+    margin-top: -3vw;
+    position: relative;
+    margin-left: -5px;
+}
+
+.redwave{
+    width: 100%;
+    z-index: 1002;
+    position: relative;
 }
 
 .speaker1 {
     z-index: 1000;
-    margin-top: -25vw;
+    margin-top: -30vw;
     margin-left: 40%;
 }
 
@@ -103,12 +219,25 @@
     width: 50vw;
 }
 
+.friendspic {
+    position: relative;
+    z-index: 1001;
+    margin-left: 5vw;
+}
+
+.friendsimage {
+    position: relative;
+    width: 50vw;
+}
+
 .mainText {
+    margin-top: 100px;
     color: white;
     text-align: center;
     animation: fadeIn 2s ease-out forwards;
     animation-delay: 1.25s;
     opacity: 0;
+    z-index: 999;
 }
 
 @keyframes fadeIn {
@@ -164,22 +293,24 @@
     border: 5px solid grey;
     opacity: 1;
     z-index: 999;
-    margin: 100px 0;
+    margin: 200px 0;
 }
 
 .whatisTedXHeader {
     color: red;
     font-family: Inter;
-    font-size: 5.5vw;
+    font-size: 5vw;
     font-weight: 700;
     margin-left: 15px;
 }
 
 .whatisTedXBody, .whatisTedXBody2 {
+    position: relative;
     font-family: Inter;
     font-weight: 400;
     margin-top: 20px;
     font-size: 1.75vw;
+    z-index: 1001;
 }
 
 .whatisTedXBody2{
@@ -212,7 +343,7 @@
     }
 
     .speaker1{
-        margin-top: -50vw;
+        margin-top: -75vw;
     }
 
     .speaker1image {
@@ -225,5 +356,27 @@
 
     .mainText {
         margin-top: 150px;
+    }
+
+    .impactTitle{
+        font-size: 6vw;
+    }
+
+    .impactSubtitle {
+        font-size: 3.5vw;
+    }
+
+    .gallerytitle{
+        font-size: 6vw;
+    }
+
+    .gallerysubtitle {
+        font-size: 3.5vw;
+        margin-left: 50vw;
+    }
+
+    .statistics-container{
+        margin-left: -2vw;
+        margin-top: 1vw;
     }
 }

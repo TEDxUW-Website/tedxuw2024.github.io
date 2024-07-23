@@ -8,8 +8,8 @@ const Footer = () => {
         <footer>
             <div className='footer_content'>
                 <div className='logos'>
-                    <img src={tedx_title_footer} alt="TEDx Title" className="title"></img>
-                    <img src={tedx_logo_footer} alt="TEDx Logo" className="logo"></img>
+                    <img src={tedx_title_footer} alt="TEDx Title" className="footer_title"></img>
+                    <img src={tedx_logo_footer} alt="TEDx Logo" className="footer_logo"></img>
                 </div>
                 <div className='timeline'>
                     <PastEventCard year="2016" text="Interconnectedness of Things" link="https://2016.tedxuw.com/"/>

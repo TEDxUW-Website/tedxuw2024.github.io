@@ -11,7 +11,7 @@ import x from './x.svg'
 import youtube from './youtube.svg'
 import mail from './mail.svg'
 import tedx_logo_footer from './tedx_logo_footer.png'
-import tedx_title_footer from './tedx_title_footer.jpg'
+import tedx_title_footer from './tedx_title_footer.png'
 import faq_desktop_frame from './FAQ-desktop-frame.svg'
 import faq_star from './FAQ-Star.svg'
 

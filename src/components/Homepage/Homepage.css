@@ -93,6 +93,7 @@
 
 .redwavescontent {
     margin-top: -196vw;
+    justify-content: center;
 }
 
 .impact {
@@ -140,6 +141,14 @@
     font-size: 2.8vw;
     font-weight: 400;
     margin-left: 57vw;
+}
+
+.carousel {
+    position: relative;
+    z-index: 1003;
+    border-radius: 30px;
+    height: 50vw;
+    margin-top: 20vw;
 }
 
 .statistics-container {

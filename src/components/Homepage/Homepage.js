@@ -7,6 +7,7 @@ import GrayWaves from '../../images/GrayWaves.svg';
 import Speaker1 from '../../images/Speaker1.svg';
 import RedWaves from '../../images/red waves.svg';
 import FriendsPic from '../../images/2buddies.svg';
+import ImageCarousel from '../Carousel/Carousel';
 
 const Homepage = () => {
     const [animationFinished, setAnimationFinished] = useState(false);
@@ -126,6 +127,10 @@ const Homepage = () => {
                     <div className='gallery'>
                         <div className='gallerytitle'>2023 Gallery</div>
                         <div className='gallerysubtitle'>A trip down memory lane...</div>
+                    </div>
+                    
+                    <div className='carousel'>
+                        <ImageCarousel />
                     </div>
                 </div>
             </div>

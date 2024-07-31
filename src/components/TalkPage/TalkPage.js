@@ -6,6 +6,7 @@ const TalkPage = () => {
     const handleButtonClick = () => {
         window.open('https://www.youtube.com/@TEDx', '_blank');
     };
+    
     return (
         <div className="talkpage-content">
             <p className="title">

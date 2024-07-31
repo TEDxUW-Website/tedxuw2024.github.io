@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import "./Homepage.css";
 import { TEDxLogo, Cloud, Cloud2, Cloud3 } from '../../assets';
 import Lottie from 'react-lottie';

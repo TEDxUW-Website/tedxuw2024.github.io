@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import "./Homepage.css";
-import { TEDxLogo, Cloud, Cloud2 } from '../../assets';
+import { TEDxLogo, Cloud, Cloud2, Cloud3 } from '../../assets';
 import Lottie from 'react-lottie';
 import shootingstar from './StarExplode.json';
 import GrayWaves from '../../images/GrayWaves.svg';
@@ -55,9 +55,9 @@ const Homepage = () => {
                     </div>
                 </div>
                 
-                <div className="clouds">
+                <div className="homepage-clouds">
                     <img src={Cloud} alt="Cloud" className="cloud cloud1" />
-                    <img src={Cloud} alt="Cloud" className="cloud cloud2" />
+                    <img src={Cloud3} alt="Cloud" className="cloud cloud2" />
                     <img src={Cloud2} alt="Cloud" className="cloud cloud3" />
                     <img src={Cloud2} alt="Cloud" className="cloud cloud4" />
                 </div>

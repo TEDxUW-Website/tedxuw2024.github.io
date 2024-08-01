@@ -1,0 +1,109 @@
+.blogs {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(0deg, #000 0%, #2A2A2A 90%, #000 100%);
+}
+
+.blog1 {
+    height: 700px;
+    width: 90%;
+    margin-top: 250px;
+    border-radius: 50px;
+    background: url('../../images/blog1.svg') left center;
+    background-size: cover;
+    z-index: 1000;
+}
+
+.blogrow2 {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-top: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogrow2col1{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogrow2col2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+}
+
+.blog2 {
+    height: 700px;
+    width: 90%;
+    border-radius: 50px;
+    background: url('../../images/blog2.svg') left center;
+    background-size: cover;
+    z-index: 1000;
+}
+
+.blog3 {
+    height: 325px;
+    width: 100%;
+    border-radius: 50px;
+    background: url('../../images/blog3.svg') left center;
+    background-size: cover;
+    z-index: 1000;
+}
+
+.blog4 {
+    height: 325px;
+    width: 100%;
+    border-radius: 50px;
+    margin-top: 50px;
+    background: url('../../images/blog4.svg') left center;
+    background-size: cover;
+    z-index: 1000;
+}
+
+.blogrow3 {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.blogrow3col1{
+    width: 50%;
+}
+
+.blogrow3col2{
+    width: 50%;
+}
+
+.blog5{
+    height: 700px;
+    width: 90%;
+    border-radius: 50px;
+    background: url('../../images/blog5.svg') left center;
+    background-size: cover;
+    z-index: 1000;
+    padding-right: 10%;
+}
+
+.blog6{
+    height: 700px;
+    width: 100%;
+    border-radius: 50px;
+    background: url('../../images/blog6.svg') left center;
+    background-size: cover;
+    z-index: 1000;
+}
+
+@media (max-width: 800px){
+    .blog1{
+        height: 400px;
+    }
+}

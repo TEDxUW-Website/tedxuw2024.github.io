@@ -8,7 +8,7 @@ import Footer from './components/Footer/Footer';
 import FAQ from './components/FAQ/FAQ';
 // import Speakers from './pages/Speakers';
 // import Talks from './pages/Talks';
-// import Blogs from './pages/Blogs';
+import Blogs from './components/Blogs/Blogs';
 // import Sponsors from './pages/Sponsors';
 import Team from './components/Team/Team';
 import './App.css';
@@ -34,10 +34,10 @@ function App() {
             <Route path="/" element={<Homepage />} />
             {/* <Route path="/speakers" element={<Speakers />} />
             <Route path="/talks" element={<Talks />} />
-            <Route path="/blogs" element={<Blogs />} />
             <Route path="/sponsors" element={<Sponsors />} /> */}
             <Route path="/faq" element={<FAQ />} />
             <Route path="/team" element={<Team />} />
+            <Route path="/blogs" element={<Blogs />} />
           </Routes>
           <Footer />
         </div>

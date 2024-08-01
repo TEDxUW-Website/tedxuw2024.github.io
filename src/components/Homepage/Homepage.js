@@ -128,9 +128,22 @@ const Homepage = () => {
                         <div className='gallerytitle'>2023 Gallery</div>
                         <div className='gallerysubtitle'>A trip down memory lane...</div>
                     </div>
+
+                    <div className="background3"></div>
+                    <div className="background3"></div>
                     
                     <div className='carousel'>
                         <ImageCarousel />
+                    </div>
+
+                    <div className='ourmission'>
+                        <div className='ourmissionHeader'>
+                            Our Mission
+                        </div>
+                        <div className='ourmissionBody'>
+                            To unite the brightest minds within the University of Waterloo community 
+                            to create an environment where change-makers can share their ideas and achievements with the world.
+                        </div>
                     </div>
                 </div>
             </div>

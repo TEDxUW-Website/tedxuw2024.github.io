@@ -40,6 +40,15 @@
     z-index: 998;
 }
 
+.background3 {
+    width: 100vw;
+    height: 85vh;
+    background: url('../../images/GleamingStars.svg') center center;
+    position: relative;
+    background-size: cover;
+    z-index: 1002;
+}
+
 .desktopclouds {
     width: 100vw;
     height: 85vh;
@@ -148,7 +157,7 @@
     z-index: 1003;
     border-radius: 30px;
     height: 50vw;
-    margin-top: 20vw;
+    margin-top: 50px;
 }
 
 .statistics-container {
@@ -210,6 +219,7 @@
     margin-top: -3vw;
     position: relative;
     margin-left: -5px;
+    overflow: hidden;
 }
 
 .redwave{
@@ -322,6 +332,37 @@
     z-index: 1001;
 }
 
+.ourmission {
+    width: 80%;
+    color: #FFF;
+    background-color: black;
+    padding: 40px 30px;
+    border-radius: 100px;
+    border: 5px solid grey;
+    opacity: 1;
+    z-index: 1002;
+    position: relative;
+    margin-left: 7vw;
+    margin-bottom: 100px;
+}
+
+.ourmissionHeader {
+    color: red;
+    font-family: Inter;
+    font-size: 5vw;
+    font-weight: 700;
+    margin-left: 15px;
+}
+
+.ourmissionBody {
+    position: relative;
+    font-family: Inter;
+    font-weight: 400;
+    margin-top: 20px;
+    font-size: 1.75vw;
+    z-index: 1001;
+}
+
 .whatisTedXBody2{
     width: 65%;
 }
@@ -349,6 +390,10 @@
 
     .whatisTedXBody2 {
         width: 100%;
+    }
+
+    .ourmissionBody {
+        font-size: 4vw;
     }
 
     .speaker1{
@@ -387,5 +432,9 @@
     .statistics-container{
         margin-left: -2vw;
         margin-top: 1vw;
+    }
+
+    .background3 {
+        background: url('../../images/GleamingStarsMobile.svg') center center;
     }
 }

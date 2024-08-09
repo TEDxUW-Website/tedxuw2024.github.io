@@ -1,0 +1,100 @@
+.talkpage-content {
+    background-image: url('../../assets/FAQ-desktop-frame.svg');
+    width: 100vw;
+    min-height: 100vh;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 0 80px;
+}
+
+.talkpage-content .title {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 102px;
+    letter-spacing: -1.8px;
+    text-transform: capitalize;
+    padding: 80px 0;
+}
+
+.talks-button {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 20px;
+    background: #EB0028;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 250px;
+    height: 52px;
+    flex-shrink: 0;
+    color: #FFF7F7;
+
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.48px;
+}
+
+/*2x_ grid format*/
+.talks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    column-gap: 40px;
+    justify-items: center;
+    align-items: center;
+}
+
+@media (max-width: 1023px) {
+    .talkpage-content .title {
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 56px;
+        /* 133.333% */
+        letter-spacing: -0.84px;
+        text-transform: capitalize;
+        padding: 30px 0;
+    }
+    .talks {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        column-gap: 40px;
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 767px) {    
+    .talkpage-content {
+        background: url('../../images/GleamingStarsMobile.svg') no-repeat center center;
+        width: 100vw;
+        min-height: 100vh;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: top center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        padding: 0 30px;
+    }
+
+}

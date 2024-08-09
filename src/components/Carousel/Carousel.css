@@ -1,0 +1,18 @@
+.carousel-container {
+    height: 40vw;
+    overflow: hidden;
+    width: 80%;
+    margin-left: 7vw;
+    margin-top: -170vh;
+  }
+  
+.carousel-container img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50px;
+}
+
+.carousel-item-padding-40-px {
+  padding-left: 20px;
+  padding-right: 20px;
+}

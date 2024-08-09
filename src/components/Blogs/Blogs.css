@@ -1,0 +1,339 @@
+.blogs {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#000 0%, #2A2A2A 100%);
+}
+
+.blogtitleright {
+    color: white;
+    font-family: Inter;
+    font-size: 2.5vw;
+    font-weight: 700;
+    width:40%;
+    margin-left: 55%;
+    padding-top: 25px;
+}
+
+.blogdateright {
+    color: red;
+    font-family: Inter;
+    font-size: 1.3vw;
+    font-weight: 500;
+    padding-right: 5%;
+    margin-top: 10px;
+}
+
+.blogdescriptionright {
+    color: white;
+    font-family: Inter;
+    font-size: 1.3vw;
+    font-weight: 400;
+    margin-top: 10px;
+    width: 55%;
+    margin-left: 40%;
+}
+
+.blogtitlebottom {
+    color: white;
+    font-family: Inter;
+    font-size: 2.5vw;
+    font-weight: 700;
+    width:40%;
+    margin-left: 5%;
+}
+
+.blogdatebottom {
+    color: red;
+    font-family: Inter;
+    font-size: 1.3vw;
+    font-weight: 500;
+    padding-right: 5%;
+    margin-top: 10px;
+    margin-left: 5%;
+}
+
+.blogdescriptionbottom {
+    color: white;
+    font-family: Inter;
+    font-size: 1.3vw;
+    font-weight: 400;
+    margin-top: 10px;
+    width: 55%;
+    margin-left: 5%;
+}
+
+.blog1 {
+    height: 700px;
+    width: 90%;
+    margin-top: 250px;
+    border-radius: 50px;
+    background: url('../../images/blog1.svg') left center;
+    background-size: cover;
+    z-index: 1000;
+}
+
+.blog1overlay {
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    background: linear-gradient(to right, transparent 0%, #000 70%);
+    z-index: 1001;
+    text-align: right;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    cursor: pointer;
+}
+
+.blog1:hover .blog1overlay{
+    opacity: 1;
+}
+
+.blogrow2 {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-top: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogrow2col1{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogrow2col2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+}
+
+.blog2 {
+    height: 700px;
+    width: 90%;
+    border-radius: 50px;
+    background: url('../../images/blog2.svg') left center;
+    background-size: cover;
+    z-index: 1000;
+}
+
+.blog2overlay {
+    display: flex;
+    align-items: end;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    background: linear-gradient(to bottom, transparent 0%, #000 70%);
+    z-index: 1001;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    cursor: pointer;
+}
+
+.blog2:hover .blog2overlay {
+    opacity: 1;
+}
+
+.blog2details {
+    padding-bottom: 7%;
+}
+
+.blog3 {
+    height: 325px;
+    width: 100%;
+    border-radius: 50px;
+    background: url('../../images/blog3.svg') left center;
+    background-size: cover;
+    z-index: 1000;
+}
+
+.blog3overlay {
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    background: linear-gradient(to right, transparent 0%, #000 70%);
+    z-index: 1001;
+    text-align: right;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    cursor: pointer;
+}
+
+.blog3:hover .blog3overlay {
+    opacity: 1;
+}
+
+.blog4 {
+    height: 325px;
+    width: 100%;
+    border-radius: 50px;
+    margin-top: 50px;
+    background: url('../../images/blog4.svg') left center;
+    background-size: cover;
+    z-index: 1000;
+}
+
+.blog4overlay {
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    background: linear-gradient(to right, transparent 0%, #000 70%);
+    z-index: 1001;
+    text-align: right;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    cursor: pointer;
+}
+
+.blog4:hover .blog4overlay {
+    opacity: 1;
+}
+
+.blogrow3 {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.blogrow3col1{
+    width: 50%;
+}
+
+.blogrow3col2{
+    width: 50%;
+}
+
+.blog5{
+    height: 700px;
+    width: 90%;
+    border-radius: 50px;
+    background: url('../../images/blog5.svg') left center;
+    background-size: cover;
+    z-index: 1000;
+    padding-right: 10%;
+}
+
+.blog5overlay {
+    display: flex;
+    align-items: end;
+    height: 100%;
+    width: 112.5%;
+    border-radius: 50px;
+    background: linear-gradient(to bottom, transparent 0%, #000 70%);
+    z-index: 1001;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    cursor: pointer;
+}
+
+.blog5:hover .blog5overlay {
+    opacity: 1;
+}
+
+.blog6{
+    height: 700px;
+    width: 100%;
+    border-radius: 50px;
+    background: url('../../images/blog6.svg') left center;
+    background-size: cover;
+    z-index: 1000;
+}
+
+.blog6overlay {
+    display: flex;
+    align-items: end;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    background: linear-gradient(to bottom, transparent 0%, #000 70%);
+    z-index: 1001;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    cursor: pointer;
+}
+
+.blog6:hover .blog6overlay {
+    opacity: 1;
+}
+
+@media (max-width: 1000px){
+    .blog1{
+        height: 400px;
+    }
+
+    .blog2, .blog3, .blog4, .blog5, .blog6{
+        height: 400px;
+        width: 100%;
+    }
+
+    /* row 2 */
+    .blogrow2{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .blogrow2col1 {
+        width: 100%;
+    }
+
+    .blogrow2col2 {
+        width: 100%;
+    }
+
+    .blog3 {
+        margin-top: 20px;
+        background-size: contain;
+    }
+
+    .blog4 {
+        margin-top: 20px;
+    }
+
+    /* row 3 */
+    .blogrow3 {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .blogrow3col1, .blogrow3col2 {
+        width: 100%;
+    }
+
+    .blog5, .blog6 {
+        margin-top: 20px;
+    }
+
+    .blogtitleright, .blogtitlebottom {
+        font-size: 3vw;
+    }
+    
+    .blogdateright, .blogdatebottom {
+        font-size: 2vw;
+    }
+    
+    .blogdescriptionright, .blogdescriptionbottom {
+        font-size: 2vw;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    .blogtitleright, .blogtitlebottom {
+        font-size: 5vw;
+    }
+    
+    .blogdateright, .blogdatebottom {
+        font-size: 4vw;
+    }
+    
+    .blogdescriptionright, .blogdescriptionbottom {
+        font-size: 4vw;
+    }
+}

@@ -40,7 +40,16 @@
     z-index: 998;
 }
 
-/* .desktopclouds {
+.background3 {
+    width: 100vw;
+    height: 85vh;
+    background: url('../../images/GleamingStars.svg') center center;
+    position: relative;
+    background-size: cover;
+    z-index: 1002;
+}
+
+.desktopclouds {
     width: 100vw;
     height: 85vh;
     background: url('../../images/DesktopClouds.svg') center center;
@@ -49,7 +58,7 @@
     top: 0;
     left: 0;
     z-index: 998;
-} */
+} 
 
 .mobileclouds {
     width: 100%;
@@ -146,6 +155,7 @@
 
 .redwavescontent {
     margin-top: -196vw;
+    justify-content: center;
 }
 
 .impact {
@@ -193,6 +203,14 @@
     font-size: 2.8vw;
     font-weight: 400;
     margin-left: 57vw;
+}
+
+.carousel {
+    position: relative;
+    z-index: 1003;
+    border-radius: 30px;
+    height: 50vw;
+    margin-top: 50px;
 }
 
 .statistics-container {
@@ -254,6 +272,7 @@
     margin-top: -3vw;
     position: relative;
     margin-left: -5px;
+    overflow: hidden;
 }
 
 .redwave{
@@ -322,7 +341,7 @@
 }
 
 .info {
-    text-align: left;
+    text-align: center;
     color: #FFF;
     font-family: Inter;
     font-size: 25px;
@@ -332,6 +351,7 @@
 }
 
 .tedxLogo {
+    padding-left: 25px;
     width: 111px;
     height: auto;
     flex-shrink: 0;
@@ -354,7 +374,7 @@
     font-family: Inter;
     font-size: 5vw;
     font-weight: 700;
-    margin-left: 15px;
+    margin-left: 3%;
 }
 
 .whatisTedXBody, .whatisTedXBody2 {
@@ -364,6 +384,39 @@
     margin-top: 20px;
     font-size: 1.75vw;
     z-index: 1001;
+    margin-left: 3%;
+}
+
+.ourmission {
+    width: 80%;
+    color: #FFF;
+    background-color: black;
+    padding: 40px 30px;
+    border-radius: 100px;
+    border: 5px solid grey;
+    opacity: 1;
+    z-index: 1002;
+    position: relative;
+    margin-left: 7vw;
+    margin-bottom: 100px;
+}
+
+.ourmissionHeader {
+    color: red;
+    font-family: Inter;
+    font-size: 5vw;
+    font-weight: 700;
+    margin-left: 4%;
+}
+
+.ourmissionBody {
+    position: relative;
+    font-family: Inter;
+    font-weight: 400;
+    margin-top: 20px;
+    font-size: 1.75vw;
+    z-index: 1001;
+    margin-left: 4%;
 }
 
 .whatisTedXBody2{
@@ -393,6 +446,10 @@
 
     .whatisTedXBody2 {
         width: 100%;
+    }
+
+    .ourmissionBody {
+        font-size: 4vw;
     }
 
     .speaker1{
@@ -431,5 +488,9 @@
     .statistics-container{
         margin-left: -2vw;
         margin-top: 1vw;
+    }
+
+    .background3 {
+        background: url('../../images/GleamingStarsMobile.svg') center center;
     }
 }

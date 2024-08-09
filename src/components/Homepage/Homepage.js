@@ -7,6 +7,7 @@ import GrayWaves from '../../images/GrayWaves.svg';
 import Speaker1 from '../../images/Speaker1.svg';
 import RedWaves from '../../images/red waves.svg';
 import FriendsPic from '../../images/2buddies.svg';
+import ImageCarousel from '../Carousel/Carousel';
 
 const Homepage = () => {
     const [animationFinished, setAnimationFinished] = useState(false);
@@ -46,11 +47,13 @@ const Homepage = () => {
                         <h1>In The Odd Chance</h1>
                     </div>
                     <div className="subtitle">
-                        <img src={TEDxLogo} alt="TEDx Logo" className="tedxLogo"></img>
                         <div className="info">
-                            <p>Date</p>
-                            <p>Time</p>
-                            <p>Location</p>
+                            <div>
+                                <p>🗓️ October 6th 2024</p>
+                                <p>🕒 9:30 AM - 6:00 PM</p>
+                            </div>
+                            <p>📍 Theatre of the Arts, University of Waterloo</p>
+                            <img src={TEDxLogo} alt="TEDx Logo" className="tedxLogo"></img>
                         </div>
                     </div>
                 </div>
@@ -126,6 +129,23 @@ const Homepage = () => {
                     <div className='gallery'>
                         <div className='gallerytitle'>2023 Gallery</div>
                         <div className='gallerysubtitle'>A trip down memory lane...</div>
+                    </div>
+
+                    <div className="background3"></div>
+                    <div className="background3"></div>
+                    
+                    <div className='carousel'>
+                        <ImageCarousel />
+                    </div>
+
+                    <div className='ourmission'>
+                        <div className='ourmissionHeader'>
+                            Our Mission
+                        </div>
+                        <div className='ourmissionBody'>
+                            To unite the brightest minds within the University of Waterloo community 
+                            to create an environment where change-makers can share their ideas and achievements with the world.
+                        </div>
                     </div>
                 </div>
             </div>

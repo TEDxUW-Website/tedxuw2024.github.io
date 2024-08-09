@@ -9,7 +9,7 @@ import FAQ from './components/FAQ/FAQ';
 import TalkPage from './components/TalkPage/TalkPage'
 // import Speakers from './pages/Speakers';
 // import Talks from './pages/Talks';
-// import Blogs from './pages/Blogs';
+import Blogs from './components/Blogs/Blogs';
 // import Sponsors from './pages/Sponsors';
 import Team from './components/Team/Team';
 import './App.css';

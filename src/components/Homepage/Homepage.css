@@ -288,7 +288,7 @@
 }
 
 .info {
-    text-align: left;
+    text-align: center;
     color: #FFF;
     font-family: Inter;
     font-size: 25px;
@@ -298,6 +298,7 @@
 }
 
 .tedxLogo {
+    padding-left: 25px;
     width: 111px;
     height: auto;
     flex-shrink: 0;
@@ -320,7 +321,7 @@
     font-family: Inter;
     font-size: 5vw;
     font-weight: 700;
-    margin-left: 15px;
+    margin-left: 3%;
 }
 
 .whatisTedXBody, .whatisTedXBody2 {
@@ -330,6 +331,7 @@
     margin-top: 20px;
     font-size: 1.75vw;
     z-index: 1001;
+    margin-left: 3%;
 }
 
 .ourmission {
@@ -351,7 +353,7 @@
     font-family: Inter;
     font-size: 5vw;
     font-weight: 700;
-    margin-left: 15px;
+    margin-left: 4%;
 }
 
 .ourmissionBody {
@@ -361,6 +363,7 @@
     margin-top: 20px;
     font-size: 1.75vw;
     z-index: 1001;
+    margin-left: 4%;
 }
 
 .whatisTedXBody2{

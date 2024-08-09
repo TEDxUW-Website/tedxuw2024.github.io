@@ -47,11 +47,13 @@ const Homepage = () => {
                         <h1>In The Odd Chance</h1>
                     </div>
                     <div className="subtitle">
-                        <img src={TEDxLogo} alt="TEDx Logo" className="tedxLogo"></img>
                         <div className="info">
-                            <p>Date</p>
-                            <p>Time</p>
-                            <p>Location</p>
+                            <div>
+                                <p>🗓️ October 6th 2024</p>
+                                <p>🕒 9:30 AM - 6:00 PM</p>
+                            </div>
+                            <p>📍 Theatre of the Arts, University of Waterloo</p>
+                            <img src={TEDxLogo} alt="TEDx Logo" className="tedxLogo"></img>
                         </div>
                     </div>
                 </div>

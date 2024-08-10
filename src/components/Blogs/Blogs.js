@@ -6,6 +6,11 @@ const Blogs = () => {
     const redirect = (url) => {
         window.open(url, "_blank");
     }
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    
     return(
         <div className='blogs'>
             <div className="background"></div>

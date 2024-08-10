@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './TalkPage.css'
 import Talk from '../Talk/Talk.js';
 
@@ -6,6 +6,10 @@ const TalkPage = () => {
     const handleButtonClick = () => {
         window.open('https://www.youtube.com/@TEDx', '_blank');
     };
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     
     return (
         <div className="talkpage-content">

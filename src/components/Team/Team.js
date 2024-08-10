@@ -1,10 +1,14 @@
-import React from "react";
+import React, {useEffect} from "react";
 import './Team.css';
 import TeamMember from "../TeamMember/TeamMember";
 import { memberlist } from "./memberList";
 import { Cloud, Cloud2 } from "../../assets";
 
 const Team = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div className="team">
             <div className="background"></div>

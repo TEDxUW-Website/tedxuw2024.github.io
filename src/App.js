@@ -21,10 +21,6 @@ function App() {
     setIsOpen(!isOpen);
   };
 
-  window.addEventListener('load', () => {
-    window.scrollTo(0, 0);
-  });
-
   return (
     <Router>
       <div className='App'>
@@ -33,9 +29,9 @@ function App() {
         <div className="content">
           <Routes>
             <Route path="/" element={<Homepage />} />
-            {/* <Route path="/speakers" element={<Speakers />} />
+            {/* <Route path="/speakers" element={<Speakers />} /> */}
             <Route path="/blogs" element={<Blogs />} />
-            <Route path="/sponsors" element={<Sponsors />} /> */}
+            {/* <Route path="/sponsors" element={<Sponsors />} /> */}
             <Route path="/faq" element={<FAQ />} />
             <Route path="/team" element={<Team />} />
             <Route path="/talks" element={<TalkPage />} />

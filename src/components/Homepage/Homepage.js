@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import "./Homepage.css";
 import { TEDxLogo, Cloud, Cloud2, Cloud3 } from '../../assets';
 import Lottie from 'react-lottie';
@@ -20,6 +20,49 @@ const Homepage = () => {
             preserveAspectRatio: 'xMidYMid slice'
         }
     };
+
+    function useSlideInOnScroll(ref) {
+        useEffect(() => {
+            const observer = new IntersectionObserver(
+                ([entry]) => {
+                    if (entry.isIntersecting) {
+                        ref.current.classList.add('visible');
+                        observer.unobserve(ref.current);
+                    }
+                },
+                {
+                    threshold: 0.1,
+                }
+            );
+    
+            if (ref.current) {
+                observer.observe(ref.current);
+            }
+    
+            return () => {
+                if (ref.current) {
+                    observer.unobserve(ref.current);
+                }
+            };
+        }, [ref]);
+    }
+
+    const statsRef = useRef(null);
+    const sponsorshipRef = useRef(null);
+    const organizerRef = useRef(null);
+    const speakerRef = useRef(null);
+    const aboutRef = useRef(null);
+    const missionRef = useRef(null);
+    useSlideInOnScroll(sponsorshipRef);
+    useSlideInOnScroll(statsRef);
+    useSlideInOnScroll(organizerRef);
+    useSlideInOnScroll(speakerRef);
+    useSlideInOnScroll(aboutRef);
+    useSlideInOnScroll(missionRef);
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <>
@@ -65,7 +108,7 @@ const Homepage = () => {
                     <img src={Cloud2} alt="Cloud" className="cloud cloud4" />
                 </div>
 
-                <div className='whatisTedX'>
+                <div className='whatisTedX' ref={aboutRef}>
                     <div className='whatisTedXHeader'>
                         What is TEDxUW?
                     </div>
@@ -96,21 +139,21 @@ const Homepage = () => {
 
                 <div className='centerStats'>
                     <div className="statistics-container">
-                        <div className="col-stat-block delegatespots" style={{marginRight: "1vw", marginBottom: "1vw", paddingTop: "1vw"}}>
+                        <div className="col-stat-block delegatespots" style={{marginRight: "1vw", marginBottom: "1vw", paddingTop: "1vw"}} ref={statsRef}>
                             <div className="stat-number">100</div>
                             <div className="stat-label">Exclusive Delegate Spots</div>
                         </div>
                         <div className='col2stats'>
-                            <div className="row-stat-block" style={{paddingTop: "2vw", paddingBottom: "2vw"}}>
+                            <div className="row-stat-block speakercount" style={{paddingTop: "2vw", paddingBottom: "2vw"}} ref={speakerRef}>
                                 <div className="stat-number7" style={{marginRight: "2vw"}}>7</div>
                                 <div className="stat-label">Fantastic TED Speakers</div>
                             </div>
-                            <div className="row-stat-block" style={{marginTop: "1vw", marginBottom: "1vw", paddingRight: "2vw", paddingBottom: "2vw", paddingTop: "2vw"}}>
+                            <div className="row-stat-block organizercount" style={{marginTop: "1vw", marginBottom: "1vw", paddingRight: "2vw", paddingBottom: "2vw", paddingTop: "2vw"}} ref={organizerRef}>
                                 <div className="stat-number25" style={{marginRight: "2vw"}}>25</div>
                                 <div className="stat-label">Amazing organizers to make it happen</div>
                             </div>
                         </div>
-                        <div className="row-stat-block" style={{paddingTop: "1vw", paddingBottom: "1vw", paddingRight: "5.5vw", zIndex: 1003, position: "relative"}}>
+                        <div className="row-stat-block sponsorshipamount" style={{paddingTop: "1vw", paddingBottom: "1vw", paddingRight: "5.5vw", zIndex: 1003, position: "relative"}} ref={sponsorshipRef}>
                             <div className="stat-number" style={{marginRight: "3vw"}}>$8580+</div>
                             <div className="stat-label">in sponsorship money</div>
                         </div>
@@ -138,7 +181,7 @@ const Homepage = () => {
                         <ImageCarousel />
                     </div>
 
-                    <div className='ourmission'>
+                    <div className='ourmission' ref={missionRef}>
                         <div className='ourmissionHeader'>
                             Our Mission
                         </div>

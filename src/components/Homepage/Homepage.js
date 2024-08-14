@@ -8,8 +8,14 @@ import Speaker1 from '../../images/Speaker1.svg';
 import RedWaves from '../../images/red waves.svg';
 import FriendsPic from '../../images/2buddies.svg';
 import ImageCarousel from '../Carousel/Carousel';
+import ReactGA from 'react-ga4';
 
 const Homepage = () => {
+    ReactGA.send({
+        hitType: "pageview",
+        page: "",
+        title: "Home"
+    });
     const [animationFinished, setAnimationFinished] = useState(false);
 
     const defaultOptions = {

@@ -1,8 +1,14 @@
 import React, {useEffect} from 'react'
 import './TalkPage.css'
 import Talk from '../Talk/Talk.js';
+import ReactGA from 'react-ga4';
 
 const TalkPage = () => {
+    ReactGA.send({
+        hitType: "pageview",
+        page: "/talks",
+        title: "Talks"
+    });
     const handleButtonClick = () => {
         window.open('https://www.youtube.com/@TEDx', '_blank');
     };

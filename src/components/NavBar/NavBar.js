@@ -6,9 +6,17 @@ import Linkedin from "../../images/LinkedIn.svg";
 import Hamburger from "../../images/Menu.svg";
 import Multiply from "../../images/Multiply.svg";
 import './NavBar.css';
+import ReactGA from 'react-ga4';
 
 const NavBar = ({ isOpen, toggleMenu }) => {
 
+  const triggerGAEvent = () => {
+    ReactGA.event({
+      category: 'Button',
+      action: 'Click',
+      label: 'Sign Up Button'
+    });
+  }
   return (
     <div className="navbar">
       <div className="navbar-menu-icon" onClick={toggleMenu}>
@@ -30,10 +38,10 @@ const NavBar = ({ isOpen, toggleMenu }) => {
         </div>
         <div className="social-icons">
           <a href="https://www.instagram.com/tedxuw/" target="_blank" rel="noopener noreferrer" style={{height: 32}}>
-            <img src={Instagram} alt="Instagram" className="custom-icon" />
+            <img src={Instagram} alt="Instagram" className="custom-icon" onClick={(triggerGAEvent('instagram'))}/>
           </a>
           <a href="https://www.linkedin.com/company/tedxuw/" target="_blank" rel="noopener noreferrer" style={{height: 32}}>
-            <img src={Linkedin} alt="Linkedin" className="custom-icon" />
+            <img src={Linkedin} alt="Linkedin" className="custom-icon" onClick={(triggerGAEvent('linkedin'))}/>
           </a>
         </div>
       </div>

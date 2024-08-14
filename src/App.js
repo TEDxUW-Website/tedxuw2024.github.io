@@ -13,8 +13,10 @@ import Blogs from './components/Blogs/Blogs';
 // import Sponsors from './pages/Sponsors';
 import Team from './components/Team/Team';
 import './App.css';
+import ReactGA from 'react-ga4';
 
 function App() {
+  ReactGA.initialize('8569432655');
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
